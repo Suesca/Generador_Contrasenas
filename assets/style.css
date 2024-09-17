@@ -84,6 +84,10 @@ h1 {
   margin-bottom: 12px;
   margin: 30px;
   gap: 2rem;
+  width: 100%;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .texto__parrafo {
@@ -134,4 +138,8 @@ h1 {
   font-size: 24px;
   font-weight: 700;
   font-family: "Inter", sans-serif;
+}
+
+p {
+  margin-top: 20px;
 }
