@@ -18,6 +18,9 @@ function generar() {
   if (numeroDigitado < 8) {
     alert("La cantidad de caracteres debe ser mayor a 8");
     return;
+  } else if (numeroDigitado > 50) {
+    alert("La cantidad de caracteres debe ser menor a 50");
+    return;
   }
 
   let password = "";

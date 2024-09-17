@@ -32,7 +32,8 @@ body::before {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -51,16 +52,17 @@ body::before {
   align-items: center;
   position: relative;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .container__informacion {
   flex: 1;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 h1 {
   font-family: "Chakra Petch", sans-serif;
-  font-size: 72px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -83,7 +85,7 @@ h1 {
   align-items: center;
   margin-bottom: 12px;
   margin: 30px;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   align-items: center;
   max-width: 100%;
@@ -92,54 +94,103 @@ h1 {
 
 .texto__parrafo {
   color: #fff;
-  font-family: "Inter";
-  font-size: 32px;
-  font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
   font-weight: 400;
-  line-height: normal;
   margin-left: 10px;
 }
 
 .container__input {
-  width: 148px;
-  height: 72px;
+  width: 100%;
+  max-width: 200px;
+  height: 56px;
   border-radius: 16px;
   background-color: #fff;
   border: none;
   color: #535353;
-  padding: 2rem;
-  font-size: 24px;
+  padding: 1rem;
+  font-size: 18px;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
 }
 
 .boton {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border: none;
   background-color: #1875e8;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   border-radius: 16px;
-  width: 243px;
-  height: 72px;
+  width: 100%;
+  max-width: 200px;
+  height: 56px;
   box-shadow: 0px 0px 20px 0px rgba(24, 117, 232, 0.5);
   cursor: pointer;
 }
 
 .container__contrasena {
-  width: 496px;
-  height: 72px;
+  width: 100%;
+  max-width: 600px;
+  height: 56px;
   border-radius: 16px;
   background-color: #fff;
   border: none;
   color: #1875e8;
-  margin: 50px;
-  padding: 2rem;
-  font-size: 24px;
+  padding: 1rem;
+  font-size: 18px;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
 }
 
 p {
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .container__input,
+  .boton {
+    width: 100%;
+    margin-top: 20px;
+    max-width: none;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .container__informacion {
+    padding: 1rem;
+  }
+
+  .container__campo {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .container__contrasena {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .container__input,
+  .boton,
+  .container__contrasena {
+    width: 100%;
+  }
+
+  .container__informacion {
+    padding: 0.5rem;
+  }
+
+  .texto__parrafo {
+    font-size: 18px;
+  }
 }
