@@ -37,10 +37,6 @@ Este proyecto es una aplicación web simple que permite generar contraseñas de 
 - `main.js`: Lógica JavaScript para generar la contraseña y verificar su fortaleza.
 - `README.md`: Documento de descripción del proyecto.
 
-## Vista Previa
-
-![Vista Previa](img/preview.png)
-
 ## Contribuciones
 
 Si deseas contribuir a este proyecto, siéntete libre de hacer un fork del repositorio, crear una nueva rama con tus cambios y luego enviar un pull request.
@@ -50,8 +46,4 @@ Si deseas contribuir a este proyecto, siéntete libre de hacer un fork del repos
 3. Haz tus cambios y haz commit de los mismos (`git commit -am 'Añadir nueva funcionalidad'`).
 4. Empuja los cambios (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
