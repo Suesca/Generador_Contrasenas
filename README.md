@@ -8,7 +8,6 @@ Este proyecto es una aplicación web simple que permite generar contraseñas de 
 - Clasificación de la fortaleza de la contraseña en tres niveles: **Débil**, **Mediana** y **Fuerte**.
 - Opciones para establecer la longitud de la contraseña.
 - Interfaz limpia y moderna con diseño responsivo.
-- El sitio web es responsive.
 - La cantidad máxima de caracteres se limitó a 50.
 
 ## Tecnologías Utilizadas
